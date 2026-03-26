@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinnaker Digital | Digital Advisory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        input:focus, textarea:focus {
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+        }
+    </style>
+</head>
+<body class="gradient-bg text-slate-200 min-h-screen flex flex-col items-center py-12 px-6">
+
+    <main class="max-w-3xl w-full text-center space-y-12">
+        <div class="space-y-4">
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-white">
+                SPINNAKER <span class="text-blue-400">DIGITAL</span>
+            </h1>
+            <p class="text-xl md:text-2xl font-light text-slate-400">
+                Navigating the future of digital health and technology
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 text-sm">
+            <div class="p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 backdrop-blur-sm">
+                <h3 class="font-semibold text-blue-300 mb-2 uppercase tracking-wider">Strategy</h3>
+                <p class="text-slate-400">Digital transformation and technology roadmaps</p>
+            </div>
+            <div class="p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 backdrop-blur-sm">
+                <h3 class="font-semibold text-blue-300 mb-2 uppercase tracking-wider">Governance</h3>
+                <p class="text-slate-400">Expert advisory for cyber and information governance</p>
+            </div>
+            <div class="p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 backdrop-blur-sm">
+                <h3 class="font-semibold text-blue-300 mb-2 uppercase tracking-wider">Interim</h3>
+                <p class="text-slate-400">Portfolio CTO and executive advisory services</p>
+            </div>
+        </div>
+
+        <div class="max-w-md mx-auto w-full bg-slate-900/50 p-8 rounded-2xl border border-slate-800 shadow-2xl">
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold text-white">Get in Touch</h2>
+                <p class="text-slate-400 text-sm">Our full site is launching soon. For enquiries, please use the form below.</p>
+            </div>
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-5 text-left">
+                <input type="hidden" name="access_key" value="1e9f6379-f9de-4fe7-ae34-6c4be159b58b">
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div>
+                    <label for="name" class="block text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required 
+                           class="w-full bg-slate-800/80 border border-slate-700 rounded-lg py-3 px-4 outline-none transition-all text-white placeholder-slate-600">
+                </div>
+                
+                <div>
+                    <label for="email" class="block text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="john@example.com" required 
+                           class="w-full bg-slate-800/80 border border-slate-700 rounded-lg py-3 px-4 outline-none transition-all text-white placeholder-slate-600">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-xs font-semibold uppercase tracking-widest text-slate-500 mb-2">How can we help?</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Briefly describe your project or enquiry.
+" required 
+                              class="w-full bg-slate-800/80 border border-slate-700 rounded-lg py-3 px-4 outline-none transition-all text-white placeholder-slate-600"></textarea>
+                </div>
+
+                <button type="submit" 
+                        class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 rounded-lg transition duration-300 shadow-lg shadow-blue-900/20 uppercase tracking-widest text-sm">
+                    Send Enquiry
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="mt-auto pt-12 pb-8 text-slate-600 text-xs tracking-widest uppercase">
+        &copy; 2026 Spinnaker Digital Ltd.
+    </footer>
+
+</body>
+</html>
